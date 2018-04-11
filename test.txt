@@ -1,1 +1,7 @@
-1
+1.将a分支关联到b分支
+ git branch --set-upstream-to=origin/<b> <a>
+
+2.将项目fetch 下来 并rebase
+ git pull --rebase (fetch:拉取代码; rebase:打补丁)
+
+3.
