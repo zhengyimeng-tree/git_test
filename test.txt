@@ -34,7 +34,12 @@
 12.把删除的状态返回
   shift + ! 
 
+<<<<<<< Updated upstream
 13.我也是神仙
+=======
+13.我是神仙
+
+>>>>>>> Stashed changes
 
 
 
