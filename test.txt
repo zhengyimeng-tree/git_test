@@ -4,4 +4,49 @@
 2.将项目fetch 下来 并rebase
  git pull --rebase (fetch:拉取代码; rebase:打补丁)
 
-3.
+3.删除本地a分支
+  git branch -d <a>
+
+4.删除远程a分支
+  git branch -r -d <origin/a>
+
+5.查看分支所属
+  git branch -vv
+
+6.查看commit未push到远程分支的信息
+  git cherry -v
+
+7.查看详细的a的commit未push到远程分支a的信息
+  git log <a> ^orign<a>
+
+8.将当前分支推送到origin主机的对应分支(如果当前分支只有一个追踪分支，那么主机名都可以省略)
+  git push origin
+
+9.如果当前分支与多个主机存在追踪关系，那么这个时候-u选项会指定一个默认主机，这样后面就可以不加任何参数使用git push
+  git push -u origin master
+
+10.upstream 设置config push 默认为upstream（上游）《新版git》
+  git config --global push.default upstream
+
+11.tracking 设置config push 默认为tracking（追踪）《旧版git》
+  git config --global push.default tracking
+
+12.把删除的状态返回
+  shift + ! 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
