@@ -8,7 +8,7 @@
   git branch -d <a>
 
 4.删除远程a分支
-  git branch -r -d <origin/a>
+  git push 
 
 5.查看分支所属
   git branch -vv
@@ -32,8 +32,7 @@
   git config --global push.default tracking
 
 12.把删除的状态返回
-  shift + ! 
-
+  shift + 
 13.知道commit id的话，查看某次commit的操作
   git show commit-id
 
@@ -51,6 +50,9 @@
   删除一个存储的进度。如果不指定stash_id，则默认删除最新的存储进度。
   git stash clear
   删除所有存储的进度。
+
+16.如果远程分支被删了 但是还能git branch -r 看到
+  就用git remote prune origin 来进行修剪
 
 
 
